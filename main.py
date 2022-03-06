@@ -4,10 +4,10 @@ from uuid import uuid4
 import time
 import json
 
-path = "path do chromedrivera"
-login = "login do insta"
-password = "haslo do insta"
-post_counter = 5 # nie wiem czy wiecej niz 10-12 smignie 
+path = "chromedriver path"
+login = "your instagram login"
+password = "your instagram password"
+post_counter = 5 # number of posts to scrape
 
 user = input("Username: ")
 
@@ -124,3 +124,4 @@ driver.close()
 
 with open(f"data/{user}.json", "w") as file:
     json.dump(userData, file, indent=4, ensure_ascii=False)
+
